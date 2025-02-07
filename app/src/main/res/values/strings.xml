@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Act 4</string>
+    <string name="ok">OK</string>
+
+
+    <string-array name="phase_options">
+        <item>Selecciona tu carrera</item>
+        <item>LISI</item>
+        <item>LI</item>
+    </string-array>
+
+
+    <string name="spinner_hint">Selecciona tu fase</string>
+
+    <string name="group_filter">[1-4]-[1-2]</string>
+
+</resources>
+
