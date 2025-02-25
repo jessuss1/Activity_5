@@ -21,37 +21,37 @@
 
     <EditText
         android:id="@+id/nameTextField"
-        android:layout_width="253dp"
-        android:layout_height="58dp"
+        android:layout_width="210dp"
+        android:layout_height="57dp"
         android:ems="10"
         android:hint="Nombre"
         android:inputType="text|textCapWords"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.126" />
+        app:layout_constraintVertical_bias="0.129" />
 
     <EditText
         android:id="@+id/groupTextField"
-        android:layout_width="253dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="95dp"
-        android:layout_marginTop="192dp"
-        android:layout_marginEnd="107dp"
+        android:layout_width="210dp"
+        android:layout_height="55dp"
+        android:digits="1234-"
         android:hint="Grupo"
         android:inputType="number"
-        android:digits="1234-"
         android:maxLength="3"
+        app:layout_constraintBottom_toTopOf="@+id/careerComboBox"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintHorizontal_bias="0.462"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.803" />
 
     <Spinner
-        android:id="@+id/phaseComboBox"
-        android:layout_width="253dp"
-        android:layout_height="58dp"
+        android:id="@+id/careerComboBox"
+        android:layout_width="210dp"
+        android:layout_height="55dp"
         android:layout_marginStart="79dp"
         android:layout_marginTop="200dp"
         android:layout_marginEnd="87dp"
@@ -61,9 +61,9 @@
         android:spinnerMode="dropdown"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.51" />
+        app:layout_constraintVertical_bias="0.447" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

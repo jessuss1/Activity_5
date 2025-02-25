@@ -16,6 +16,12 @@ import androidx.core.view.WindowInsetsCompat;
 public class DataDisplay extends AppCompatActivity {
 
     @SuppressLint("SetTextI18n")
+
+    TextView nameLabel;
+    TextView groupLabel;
+    TextView careerLabel;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,18 +37,18 @@ public class DataDisplay extends AppCompatActivity {
 
         String name = getIntent().getStringExtra("name");
         String group = getIntent().getStringExtra("group");
-        String phase = getIntent().getStringExtra("phase");
+        String  career = getIntent().getStringExtra("career");
 
 
-        TextView nameLabel = findViewById(R.id.nameLabel);
-        TextView groupLabel = findViewById(R.id.groupLabel);
-        TextView phaseLabel = findViewById(R.id.phaseLabel);
+        nameLabel = findViewById(R.id.nameLabel);
+        groupLabel = findViewById(R.id.groupLabel);
+        careerLabel = findViewById(R.id.careerLabel);
 
         Button backButton = findViewById(R.id.backButton);
 
         nameLabel.setText("Nombre: "+name);
         groupLabel.setText("Grupo: "+group);
-        phaseLabel.setText("Carrera: "+phase);
+        careerLabel.setText("Carrera: "+career);
 
 
         backButton.setOnClickListener(new View.OnClickListener() {
